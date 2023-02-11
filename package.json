@@ -1,0 +1,38 @@
+{
+  "name": "zl-vue3-ui",
+  "private": false,
+  "version": "0.0.5",
+  "type": "module",
+  "main": "./dis/zl-vue3-ui.umd.cjs",
+  "module": "./dis/zl-vue3-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/zl-vue3-ui.js",
+      "require": "./dist/zzl-vue3-ui.umd.cjs"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "dev": "vite --port 8081",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "element-plus": "^2.2.30",
+    "sass": "^1.57.1",
+    "scss": "^0.2.4",
+    "vite-plugin-md": "^0.22.5",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6",
+    "vue3-emoji": "^1.3.0",
+    "zl-vue3-ui": "^0.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.3",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}
