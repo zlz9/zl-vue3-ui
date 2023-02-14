@@ -24,8 +24,6 @@ const tClass = computed(() => {
     props.disable ? "z-button-disable" : "",
   ];
 });
-
-console.log(props.type);
 </script>
 
 <style lang="scss" scoped>

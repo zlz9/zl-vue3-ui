@@ -11,9 +11,6 @@
     },
     {
       "path": "."
-    },
-    {
-      "path": "../../zl-vue3-doc"
     }
   ],
   "settings": {}
