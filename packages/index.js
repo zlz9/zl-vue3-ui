@@ -5,6 +5,7 @@ import zSpace from "./space/index";
 import zSelect from "./select/index";
 import zChat from "./chat/index";
 import zComment from "./comment/index";
+import zSearch from "./search/index";
 const components = [
   zButton,
   zInput,
@@ -13,6 +14,7 @@ const components = [
   zSelect,
   zChat,
   zComment,
+  zSearch,
 ];
 const install = (app) => {
   components.forEach((item) => {
@@ -22,5 +24,14 @@ const install = (app) => {
 const ZUI = {
   install,
 };
-export { zButton, zInput, zTextArea, zSpace, zSelect, zChat, zComment };
+export {
+  zButton,
+  zInput,
+  zTextArea,
+  zSpace,
+  zSelect,
+  zChat,
+  zComment,
+  zSearch,
+};
 export default ZUI;

@@ -1,6 +1,6 @@
-import zInput from "./index.vue";
-zInput.install = (app) => {
-  app.component(zInput.name, zInput);
+import zSearch from "./index.vue";
+zSearch.install = (app) => {
+  app.component(zSearch.name, zSearch);
 };
 
-export default zInput;
+export default zSearch;
