@@ -1,7 +1,21 @@
-# Vue 3 + Vite
+## zl-vue3-ui 是一个基于 element-plus 封装的 ui 组件库
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 快速上手
 
-## Recommended IDE Setup
+```js
+npm install zl-vue3-ui
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```js
+//main.js
+import ZUI from "zl-vue3-ui";
+import "../node_modules/zl-vue3-ui/dist/style.css";
+const app = createApp(App);
+app.use(ZUI);
+app.mount("#app");
+```
+
+```js
+// 支持按需引入
+import { zButton } from "zl-vue3-ui";
+```
