@@ -1,5 +1,4 @@
 import DefaultTheme from "vitepress/theme";
-import "@vitepress-demo-preview/component/dist/style.css";
 // 基于element-plus二次封装基础组件
 import ZUI from "../../../dist/zl-vue3-ui";
 import demo from "vitepress-demoblock/demo.vue";

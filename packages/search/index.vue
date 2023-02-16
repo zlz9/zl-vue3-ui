@@ -244,7 +244,7 @@ const checkTitle = (item) => {
   flex-wrap: wrap;
 
   .z-top-item {
-    font-family: $font-family;
+    font-family: Comic Sans MS, cursive;
     font-weight: 600;
     display: flex;
     height: 32px;

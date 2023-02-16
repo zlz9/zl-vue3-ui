@@ -7,6 +7,7 @@
       @checkTitle="checkTitle"
     >
     </zSearch>
+    <z-select></z-select>
   </div>
 </template>
 
