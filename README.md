@@ -17,5 +17,5 @@ app.mount("#app");
 
 ```js
 // 支持按需引入
-import { zButton } from "zl-vue3-ui";
+import { zSearch } from "zl-vue3-ui";
 ```

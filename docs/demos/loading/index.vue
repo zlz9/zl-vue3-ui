@@ -3,8 +3,8 @@
   <div>
     <z-loading :isShow="showLoading">
       <!-- <template #content>
-        <div class="loading"></div>
-      </template> -->
+          <div class="loading"></div>
+        </template> -->
     </z-loading>
   </div>
 </template>
@@ -16,6 +16,7 @@ const show = () => {
   showLoading.value = !showLoading.value;
   setTimeout(() => {
     showLoading.value = false;
+    2;
   }, 2000);
 };
 </script>
