@@ -1,5 +1,5 @@
 <template>
-  <div class="z-search-shadow" @click="hiddenCard"></div>
+  <div :class="shadowStyle" @click="hiddenCard"></div>
   <div class="z-search">
     <el-input
       :placeholder="searchData"
@@ -224,6 +224,9 @@ const clearAll = () => {
 const checkTitle = (item) => {
   emits("checkTitle", item);
 };
+const shadowStyle = computed(() => {
+  return [isShow.value == false ? "z-search-shadow" : "z-search-shadow-close"];
+});
 </script>
 
 <style lang="scss" scoped>
@@ -287,7 +290,18 @@ const checkTitle = (item) => {
 .z-search-shadow {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.z-search-shadow-close {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
 }
 .z-search {
   position: relative;

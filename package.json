@@ -1,7 +1,7 @@
 {
   "name": "zl-vue3-ui",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.0.9",
   "type": "module",
   "main": "./dis/zl-vue3-ui.umd.cjs",
   "module": "./dis/zl-vue3-ui.js",

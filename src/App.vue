@@ -1,50 +1,47 @@
 <template>
-  <div class="container-demo">
-    <ZVList @indexChange="handleIndexChange" :dataLength="data.list.length">
-      <div class="v-list-item" v-for="item in lastData" :key="item">
-        {{ item }}
-      </div>
-    </ZVList>
+  <div>
+    <zSearch
+      @search="search"
+      :listData="listData"
+      :hotList="hotList"
+      @checkTitle="checkTitle"
+    >
+    </zSearch>
   </div>
 </template>
 
 <script setup>
-import { computed, ref, reactive } from "vue";
-import { ZVList } from "../packages";
-const startIndex = ref(0);
-const endIndex = ref(6);
-// 原始数据
-const data = reactive({ list: [] });
-
-for (let i = 0; i < 500; i++) {
-  data.list.push(i);
-}
-
-// 索引改变
-const handleIndexChange = (start, end) => {
-  startIndex.value = start;
-  endIndex.value = end;
+import { zSearch } from "../packages";
+import { reactive } from "vue";
+// 搜索触发的函数
+const search = (title) => {
+  console.log(title);
 };
-
-// 截取显示的数据
-const lastData = computed(() => {
-  return data.list.slice(startIndex.value, endIndex.value);
-});
+// 点击tag标签和热搜榜触发的函数
+const checkTitle = (item) => {
+  console.log(item);
+};
+// 搜索栏滚动数据
+const listData = reactive([
+  "进击的巨人",
+  "无职转生",
+  "jojo的奇妙冒险",
+  "黑色五叶草",
+  "名侦探柯南",
+]);
+//top前十
+const hotList = reactive([
+  "进击的巨人",
+  "东京美食家",
+  "死神",
+  "海贼王",
+  "火影忍者",
+  "电锯人",
+  "至两千年前的你",
+  "想要成为影之实力者",
+  "不死者之王",
+  "咒术回战",
+]);
 </script>
 
-<style lang="scss" scoped>
-.container-demo {
-  width: 90vw;
-  height: 90vh;
-  margin-left: 5vw;
-  border: 1px solid red;
-  overflow: hidden;
-}
-.v-list-item {
-  height: 160px;
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-}
-</style>
+<style lang="scss" scoped></style>
