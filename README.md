@@ -1,5 +1,7 @@
 ## zl-vue3-ui 是一个基于 element-plus 封装的 ui 组件库
 
+- 文档 [文档](https://zlz9.github.io/docs/)。
+
 ## 快速上手
 
 ```js

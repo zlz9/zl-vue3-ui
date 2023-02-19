@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # 如果部署到 https://<USERNAME>.github.io
 # git push -f git@github.com:zlz9/zlz9.github.io.git master
 
-# 如果是部署到 https://<USERNAME>.github.io/<REPO>     https://zlz9.github.io/gh-pages
+# 如果是部署到 https://<USERNAME>.github.io/<REPO>     https://zlz9.github.io/docs/
 git push -f git@github.com:zlz9/docs.git master:gh-pages
 
 cd -
