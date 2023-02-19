@@ -1,5 +1,5 @@
 <template>
-  <div class="container-demo">
+  <div class="zl-container">
     <ZVList @indexChange="handleIndexChange" :dataLength="data.list.length">
       <div class="v-list-item" v-for="item in lastData" :key="item">
         {{ item }}
@@ -10,13 +10,12 @@
 
 <script setup>
 import { computed, ref, reactive } from "vue";
-import { ZVList } from "../packages";
-const startIndex = ref(0);
-const endIndex = ref(6);
+const startIndex = ref();
+const endIndex = ref();
 // 原始数据
 const data = reactive({ list: [] });
 
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 200; i++) {
   data.list.push(i);
 }
 
@@ -33,10 +32,9 @@ const lastData = computed(() => {
 </script>
 
 <style lang="scss" scoped>
-.container-demo {
-  width: 90vw;
+.zl-container {
+  width: 35vw;
   height: 90vh;
-  margin-left: 5vw;
   border: 1px solid red;
   overflow: hidden;
 }

@@ -22,6 +22,7 @@ export default defineConfig({
             { text: "评论组件", link: "/components/comment/" },
             { text: "搜索组件", link: "/components/search/" },
             { text: "loading组件", link: "/components/loading/" },
+            { text: "虚拟列表", link: "/components/vList/" },
           ],
         },
       ],
